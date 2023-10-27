@@ -7,7 +7,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"]
+    values = ["zulu-jre-ami-202306-ubtu2204-prod-ukubzczf6qqjq"]
   }
 
   filter {
@@ -15,7 +15,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["679593333241"] # Canonical
 }
 
 resource "aws_instance" "web" {
